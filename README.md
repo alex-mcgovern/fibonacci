@@ -24,9 +24,18 @@ print(f"First 10 Fibonacci numbers: {sequence}")
 ## Function Documentation
 
 ### fibonacci(n)
-Returns the nth Fibonacci number.
+Returns the nth Fibonacci number (0-indexed).
 
-**Note:** This function is currently not implemented and will raise a NotImplementedError.
+**Parameters:**
+- `n` (int): The position in the Fibonacci sequence
+
+**Returns:**
+- `int`: The nth Fibonacci number
+
+**Note:**
+- fibonacci(0) = 0
+- fibonacci(1) = 1
+- fibonacci(n) = fibonacci(n-1) + fibonacci(n-2) for n > 1
 
 ### fibonacci_sequence(length)
 Generates a list containing the Fibonacci sequence of the specified length.
@@ -39,7 +48,3 @@ Generates a list containing the Fibonacci sequence of the specified length.
 
 **Raises:**
 - `ValueError`: If length is negative
-
-## Development Status
-
-This is a work in progress. The core `fibonacci()` function needs to be implemented.
